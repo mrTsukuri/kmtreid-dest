@@ -106,8 +106,7 @@ import Swiper, {Navigation, Pagination, Thumbs, EffectFade} from 'swiper';
         new Swiper(item, {
             modules: [Navigation, Pagination],                
             spaceBetween: 15,
-            slidesPerView: 'auto',
-            loop: true,            
+            slidesPerView: 'auto',                      
             navigation: navigation,
             pagination: pagination, 
             breakpoints: {                                 

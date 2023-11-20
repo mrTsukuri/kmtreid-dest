@@ -146,7 +146,7 @@
                     <label class="main-input">
                       <input class="px-sm-30 px-20 py-sm-20 py-15 fs-sm-16 fs-14" type="tel" placeholder="+7 (9__) ___-__-__">
                     </label>
-                    <button class="btn btn-main px-sm-30 px-20 py-sm-20 py-15 fs-sm-16 fs-14 fw-sb">Начать сотрудничество </button>
+                    <button class="btn btn-main px-sm-30 px-20 py-sm-20 py-15 fs-sm-16 fs-14">Начать сотрудничество </button>
                   </form>
                 </div>
               </div>
@@ -259,13 +259,13 @@
               </div>
               <p class="fs-14 lh-n o-0_8 text-center text-lg-start">Посещая сайт компании «КМ ТРЕЙД», вы соглашаетесь с Правилами и условиями использования и политикой обработки персональных данных данного сайта.</p>
             </div>
-            <div class="footer-bot-form d-flex flex-column gap-15">
-              <div class="fs-16 fw-sb mx-auto mx-lg-start">Бесплатная консультация</div>
-              <form class="d-flex flex-column gap-15" name="footer-form" autocomplete="off">
+            <div class="footer-bot-form d-flex flex-column align-items-center align-items-lg-start gap-15">
+              <div class="fs-16 fw-sb">Бесплатная консультация</div>
+              <form class="d-flex flex-column gap-15 align-self-stretch" name="footer-form" autocomplete="off">
                 <label class="main-input">
                   <input class="px-20 py-15 fs-16" type="tel" placeholder="+7 (9__) ___-__-__" required>
                 </label>
-                <button class="btn btn-main px-20 py-15 fs-16 fw-sb">Получить консультацию</button>
+                <button class="btn btn-main px-20 py-15 fs-16">Получить консультацию</button>
               </form>
             </div>
           </div>
@@ -273,7 +273,7 @@
         <div class="position-absolute top-0 end-0 pe-10 pe-sm-0 d-none d-lg-block">
           <div class="scroll-item d-flex flex-column gap-20 position-fixed">
             <div class="rounded-circle p-xl-15 p-10 d-flex scroll-top pointer border border-2 border-white bg-light"><i class="icon u_arrow-up fs-xl-30 fs-20"></i></div>
-            <button class="rounded-circle p-xl-15 p-10 d-flex scroll-call pointer border border-2 border-main bg-main"><i class="icon u_phone-alt fs-xl-30 fs-20 text-white"></i></button>
+            <button class="rounded-circle p-xl-15 p-10 d-flex scroll-call pointer border border-2 border-main bg-main" data-bs-toggle="modal" data-bs-target=".modal-call"><i class="icon u_phone-alt fs-xl-30 fs-20 text-white"></i></button>
           </div>
         </div>
       </div>
@@ -365,7 +365,7 @@
               <label class="main-input">
                 <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
               </label>
-              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Начать сотрудничество</button>
+              <button class="btn btn-main px-20 py-15 fs-14">Начать сотрудничество</button>
             </form>
           </div>
         </div>
@@ -388,7 +388,7 @@
               <label class="main-input">
                 <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
               </label>
-              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Начать сотрудничество</button>
+              <button class="btn btn-main px-20 py-15 fs-14">Начать сотрудничество</button>
             </form>
           </div>
         </div>
@@ -436,13 +436,46 @@
               <label class="main-input">
                 <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
               </label>
-              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Купить</button>
+              <button class="btn btn-main px-20 py-15 fs-14">Купить</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal fade modal-price_request" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
+    <div class="modal fade modal-commercial" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">               
+            <button class="btn-close position-absolute end-0 top-0 border-0 m-0 d-flex p-10" data-bs-dismiss="modal"><i class="icon close fs-18"></i></button>
+          </div>
+          <div class="modal-body">               
+            <h3 class="fs-18 fw-sb lh-1 mb-0">Получить коммерчиское предложение</h3>
+            <div class="modal-img">
+              <picture>
+                <source srcset="images/modal/modal-img.webp" type="image/webp"><img src="images/modal/modal-img.jpg" loading="lazy">
+              </picture>
+            </div>
+            <div class="modal-buy-item d-flex flex-column gap-10">
+              <div class="fs-18 fw-sb">2 500 000 <span class='fs-14'>руб.</span></div>
+              <div class="d-flex gap-20"><a class="btn btn-inline fs-14" href="#">Доставка и оплата</a><a class="btn btn-inline fs-14" href="#">Гарантии</a></div>
+              <p>Строительный Кран башенный КБ-474А с верхним поворотом – г/п 8 тонн. Вылет стрелы д 55 м, высота подъема до 234 метра. Предназначен для механизации подъемно-транспортных работ при строительстве.</p>
+              <div class="modal-char d-flex flex-column gap-8">                       
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+              </div>
+            </div>
+            <form class="d-flex flex-column gap-10" name="modal-commercial" autocomplete="off">
+              <label class="main-input">
+                <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
+              </label>
+              <button class="btn btn-main px-20 py-15 fs-14">Получить коммерческое предложение</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-price_noprice" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">               
@@ -465,11 +498,11 @@
                 <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
               </div>
             </div>
-            <form class="d-flex flex-column gap-10" name="modal-price_request" autocomplete="off">
+            <form class="d-flex flex-column gap-10" name="modal-price_noprice" autocomplete="off">
               <label class="main-input">
                 <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
               </label>
-              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Купить</button>
+              <button class="btn btn-main px-20 py-15 fs-14">Купить</button>
             </form>
           </div>
         </div>
@@ -482,7 +515,7 @@
             <button class="btn-close position-absolute end-0 top-0 border-0 m-0 d-flex p-10" data-bs-dismiss="modal"><i class="icon close fs-18"></i></button>
           </div>
           <div class="modal-body">               
-            <h3 class="fs-18 fw-sb lh-1 mb-0">Запрос цены на строительный Кран башенный КБ-474А</h3>
+            <h3 class="fs-18 fw-sb lh-1 mb-0">Заказать монтаж и демонтаж козловых кранов</h3>
             <div class="modal-img">
               <picture>
                 <source srcset="images/modal/modal-img.webp" type="image/webp"><img src="images/modal/modal-img.jpg" loading="lazy">
@@ -491,17 +524,35 @@
             <div class="modal-buy-item d-flex flex-column gap-10">                   
               <div class="fs-18 fw-sb">2 500 000 <span class='fs-14'>руб.</span></div>
               <p>Строительный Кран башенный КБ-474А с верхним поворотом – г/п 8 тонн. Вылет стрелы д 55 м, высота подъема до 234 метра. Предназначен для механизации подъемно-транспортных работ при строительстве.</p>
-              <div class="modal-char d-flex flex-column gap-8">                       
-                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
-                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
-                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
-              </div>
             </div>
             <form class="d-flex flex-column gap-10" name="modal-service_order" autocomplete="off">
               <label class="main-input">
                 <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
               </label>
-              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Заказать</button>
+              <button class="btn btn-main px-20 py-15 fs-14">Заказать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-price_request" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">               
+            <button class="btn-close position-absolute end-0 top-0 border-0 m-0 d-flex p-10" data-bs-dismiss="modal"><i class="icon close fs-18"></i></button>
+          </div>
+          <div class="modal-body">               
+            <h3 class="fs-18 fw-sb lh-1 mb-0">Запрос цены на строительный Кран башенный КБ-474А</h3>
+            <div class="modal-img">
+              <picture>
+                <source srcset="images/modal/modal-img.webp" type="image/webp"><img src="images/modal/modal-img.jpg" loading="lazy">
+              </picture>
+            </div>
+            <form class="d-flex flex-column gap-10" name="modal-price_request" autocomplete="off">
+              <label class="main-input">
+                <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
+              </label>
+              <button class="btn btn-main px-20 py-15 fs-14">Запросить цену</button>
             </form>
           </div>
         </div>
@@ -513,7 +564,7 @@
           <div class="modal-body">
             <h3 class="fs-18 fw-sb lh-1 mb-0 text-center">Заявка принята</h3>
             <p class="text-center">Мы свяжемся с вами в ближайшее рабочее время</p>
-            <button class="btn btn-main px-20 py-15 fs-14 fw-sb" data-bs-dismiss="modal">Хорошо</button>
+            <button class="btn btn-main px-20 py-15 fs-14" data-bs-dismiss="modal">Хорошо</button>
           </div>
         </div>
       </div>
