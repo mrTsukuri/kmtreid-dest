@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="themes/engine/css/boots.css" as="style">
+    <link rel="preload" href="themes/engine/css/main.css" as="style">
+    <link rel="preload" href="themes/engine/css/libs.css" as="style">
+    <link rel="preload" href="themes/engine/fonts/MyriadPro-Regular/MyriadPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="images/favicon.png" as="" type="image/png">
+    <link rel="icon" href="images/favicon.svg" as="" type="image/svg+xml">
+    <link rel="stylesheet" href="themes/engine/css/boots.css">
+    <link rel="stylesheet" href="themes/engine/css/main.css">
+    <link rel="stylesheet" href="themes/engine/css/libs.css">
+    <title>Избранные товары</title>
+  </head>
+  <body>
+    <header class="header mb-lg-40 mb-md-20 mb-0">
+      <div class="header-top bg-light py-15">
+        <div class="container">
+          <div class="header-top-wrapper d-flex align-items-center justify-content-between">
+            <div class="header-top-logo d-lg-none d-flex gap-20 align-items-center"><a class="header-menuBtn d-flex" href="#mobile-menu" aria-lebel="mobile-btn"><i class="icon u_bars fs-25"></i></a><a class="header-mLogo" href="index.html"><img src="images/mobile-logo.svg" alt="Логотип"></a></div>
+            <nav class="header-top-nav d-lg-block d-none">
+              <ul class="list-unstyled m-0 p-0 d-flex align-items-center gap-15">
+                <li>
+                  <div class="dropdawn position-relative">
+                    <div class="dropdawn-btn"><a class="fs-14 fw-lg d-flex align-items-center gap-2" href="about.html"><span>О компании</span><i class="icon u_angle-down fs-12"></i></a></div>
+                    <div class="dropdawn-menu bg-white position-absolute">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="10" viewBox="0 0 20 10" fill="none">
+                        <path d="M8.58579 1.41421C9.36684 0.633163 10.6332 0.633165 11.4142 1.41421L20 10H0L8.58579 1.41421Z" fill="white"></path>
+                      </svg>
+                      <ul class="list-unstyled m-0 p-0">
+                        <li><a class="fs-14 fw-lg" href="#">Вакансии</a></li>
+                        <li><a class="fs-14 fw-lg" href="#">Партнерам</a></li>
+                        <li><a class="fs-14 fw-lg" href="articles.html">Статьи</a></li>
+                        <li><a class="fs-14 fw-lg" href="#">Доставка и оплата</a></li>
+                        <li><a class="fs-14 fw-lg" href="certificates.html">Сертификаты и лицензии</a></li>
+                        <li><a class="fs-14 fw-lg" href="questions.html">Вопрос-ответ</a></li>
+                        <li><a class="fs-14 fw-lg" href="#">Лизинг</a></li>
+                      </ul>
+                      <hr class="my-15 o-0_1">
+                      <ul class="list-unstyled m-0 p-0">
+                        <li class="d-flex align-items-start gap-10">
+                          <div class="d-flex py-2"><i class="icon fs-12 o-0_3 u_map-marker"></i></div><span class="fs-14 fw-lg">г. Подольск, ул. Коммунальная, д. 13 , помещ. 3</span>
+                        </li>
+                        <li class="d-flex align-items-start gap-10">
+                          <div class="d-flex py-2"><i class="icon fs-12 o-0_3 u_clock-eight"></i></div><span class="fs-14 fw-lg">Пн - Пт с 9:00 до 18:00</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li><a class="fs-14 fw-lg" href="contact.html">Контакты</a></li>
+                <li><a class="fs-14 fw-lg" href="news.html">Новости</a></li>
+                <li><a class="fs-14 fw-lg" href="#">Отзывы</a></li>
+                <li><a class="fs-14 fw-lg" href="promotions.html">Акции</a></li>
+              </ul>
+            </nav>
+            <div class="d-md-flex d-none align-items-center gap-15"><a class="d-flex header-social" href="#"><img src="images/vk.svg" alt="Вконтакте"></a><a class="d-flex header-social" href="#"><img src="images/tg.svg" alt="Telegram"></a><a class="d-flex header-social" href="#"><img src="images/wa.svg" alt="WhatsApp"></a>
+            </div>
+            <div class="d-flex align-items-center gap-xl-40 gap-15">
+              <div class="d-flex flex-column align-items-end"><a class="fs-xl-20 fs-sm-18 fs-14 lh-1 text-uppercase" href="tel:88001231212">8 800 123-12-12</a><span class="fs-sm-14 fs-12 fw-lg lh-1">Бесплатно по России</span></div>
+              <div class="d-flex flex-column align-items-end"><a class="fs-xl-20 fs-sm-18 fs-14 lh-1 text-uppercase fw-sb" href="tel:+74957841888">8 (495) 784-18-88</a><a class="fs-sm-14 fs-12 fw-lg lh-1" href="mailto:kmtrade.llc@yandex.ru">kmtrade.llc@yandex.ru</a></div>
+            </div>
+            <button class="btn btn-main d-md-flex d-none align-items-center p-10 gap-5" data-bs-toggle="modal" data-bs-target=".modal-call"><i class="icon u_phone-volume fs-14"></i><span class="lh-0_9 fs-14">Заказать звонок</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="header-bot py-sm-25 py-15">
+        <div class="container">
+          <div class="d-flex align-items-center gap-xl-50 gap-20"><a class="header-logo d-lg-flex d-none flex-column g-5" href="index.html"><img src="images/logo.svg" alt="Логотип"><span class="o-0_5 fs-12 text-black">башенные краны, запчасти и сервис</span></a>
+            <ul class="list-unstyled p-0 m-0 d-flex gap-20">
+              <li><a class="fs-16" href="catalog-crane.html">Продажа</a></li>
+              <li><a class="fs-16" href="catalog-gear.html">Запчасти</a></li>
+              <li><a class="fs-16" href="services.html">Сервис</a></li>
+            </ul>
+            <form class="header-search d-md-flex d-none position-relative flex-grow-1 js_search" action="search.html" method="get" autocomplite="off">
+              <input class="w-100 bg-light" type="text" name="stext" placeholder="Поиск по сайту">
+              <div class="header-search-block d-flex align-items-center gap-15 position-absolute">
+                <div class="d-flex align-items-center gap-5"><span class="fs-14 fw-lg">Например:</span><a class="fs-14 fw-lg text-decoration-underline" href="search.html">башенный кран</a></div>
+                <button class="btn btn-inline-nb d-flex"><i class="icon u_search fs-18"></i></button>
+              </div>
+              <div class="header-search-result search-result position-absolute p-xl-30 p-20 bg-white flex-column w-100 overflow-auto scroll-visible">
+                <div class="d-flex flex-column gap-10">
+                  <div class="fs-14 fw-sb">Краны</div><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a>
+                </div>
+                <hr class="my-15 o-0_1">
+                <div class="d-flex flex-column gap-10">
+                  <div class="fs-14 fw-sb">Запчасти</div><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                    <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a>
+                </div>
+              </div>
+            </form>
+            <div class="d-md-flex d-none gap-20 align-items-center"><a class="d-flex" href="favorites.html"><i class="icon fs-25 u_star"> </i></a><a class="d-flex" href="compare.html"><i class="icon fs-25 u_chart-bar"> </i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumbs mb-lg-40 mb-30">
+        <div class="container">
+          <div class="breadcrumbs-nav d-flex align-items-center gap-10 text-nowrap overflow-auto"><span><a class="breadcrumbs-nav-item fs-14" href="/"><span>Главная</span></a></span><span><a class="breadcrumbs-nav-item fs-14" href="#"><span>Внутренняя Страница</span></a></span><span><span class="breadcrumbs-nav-item breadcrumbs-nav-item-disabled breadcrumbs-nav-item fs-14">Страница                                                                                                         </span></span></div>
+        </div>
+      </div>
+      <section class="crane-favorites search">
+        <div class="container">
+          <h2 class="fs-lg-40 fs-sm-25 fs-18 lh-1 fw-sb mb-sm-30 mb-15">Избранные краны</h2>
+          <div class="row g-xxl-30 g-lg-20 g-10">
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-light" href="product-crane.html">
+                  <picture>
+                    <source srcset="images/crane/crane-main.webp" type="image/webp"><img src="images/crane/crane-main.png" alt="Башенный кран COMANSA 21CM335" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="fs-sm-16 fs-14 fw-sb" href="product-gear.html">Башенный кран COMANSA 21CM335</a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-xl-between">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_chart-bar"></i><span class="fs-14">В сравнение</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-light" href="product-crane.html">
+                  <picture>
+                    <source srcset="images/crane/crane-main.webp" type="image/webp"><img src="images/crane/crane-main.png" alt="Башенный кран COMANSA 21CM335" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="fs-sm-16 fs-14 fw-sb" href="product-gear.html">Башенный кран COMANSA 21CM335</a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-xl-between">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_chart-bar"></i><span class="fs-14">В сравнение</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-light" href="product-crane.html">
+                  <picture>
+                    <source srcset="images/crane/crane-main.webp" type="image/webp"><img src="images/crane/crane-main.png" alt="Башенный кран COMANSA 21CM335" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="fs-sm-16 fs-14 fw-sb" href="product-gear.html">Башенный кран COMANSA 21CM335</a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-xl-between">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_chart-bar"></i><span class="fs-14">В сравнение</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-light" href="product-crane.html">
+                  <picture>
+                    <source srcset="images/crane/crane-main.webp" type="image/webp"><img src="images/crane/crane-main.png" alt="Башенный кран COMANSA 21CM335" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="fs-sm-16 fs-14 fw-sb" href="product-gear.html">Башенный кран COMANSA 21CM335</a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-xl-between">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_chart-bar"></i><span class="fs-14">В сравнение</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-light" href="product-crane.html">
+                  <picture>
+                    <source srcset="images/crane/crane-main.webp" type="image/webp"><img src="images/crane/crane-main.png" alt="Башенный кран COMANSA 21CM335" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="fs-sm-16 fs-14 fw-sb" href="product-gear.html">Башенный кран COMANSA 21CM335</a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-xl-between">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_chart-bar"></i><span class="fs-14">В сравнение</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-light" href="product-crane.html">
+                  <picture>
+                    <source srcset="images/crane/crane-main.webp" type="image/webp"><img src="images/crane/crane-main.png" alt="Башенный кран COMANSA 21CM335" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="fs-sm-16 fs-14 fw-sb" href="product-gear.html">Башенный кран COMANSA 21CM335</a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-xl-between">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_chart-bar"></i><span class="fs-14">В сравнение</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-light" href="product-crane.html">
+                  <picture>
+                    <source srcset="images/crane/crane-main.webp" type="image/webp"><img src="images/crane/crane-main.png" alt="Башенный кран COMANSA 21CM335" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="fs-sm-16 fs-14 fw-sb" href="product-gear.html">Башенный кран COMANSA 21CM335</a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-xl-between">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_chart-bar"></i><span class="fs-14">В сравнение</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gear-favorites search">
+        <div class="container">
+          <h2 class="fs-lg-40 fs-sm-25 fs-18 lh-1 fw-sb mb-sm-30 mb-15">Избранные краны</h2>
+          <div class="row g-xxl-30 g-lg-20 g-10">
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-white border-bottom border-2 border-light" href="product-gear.html">
+                  <picture>
+                    <source srcset="images/gear/1.webp" type="image/webp"><img class="of-contain" src="images/gear/1.png" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="catalog-item-title fs-sm-16 fs-14 fw-sb fw-sb" href="product-gear.html"></a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column flex-grow-1 justify-content-end">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-center">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-white border-bottom border-2 border-light" href="product-gear.html">
+                  <picture>
+                    <source srcset="images/gear/2.webp" type="image/webp"><img class="of-contain" src="images/gear/2.png" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="catalog-item-title fs-sm-16 fs-14 fw-sb fw-sb" href="product-gear.html"></a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column flex-grow-1 justify-content-end">
+                    <button class="btn-inline fs-16 lh-1" data-bs-toggle="modal" data-bs-target=".modal-price_request">Запросить цену</button>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-center">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-white border-bottom border-2 border-light" href="product-gear.html">
+                  <picture>
+                    <source srcset="images/gear/3.webp" type="image/webp"><img class="of-contain" src="images/gear/3.png" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="catalog-item-title fs-sm-16 fs-14 fw-sb fw-sb" href="product-gear.html"></a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column flex-grow-1 justify-content-end">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-center">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-white border-bottom border-2 border-light" href="product-gear.html">
+                  <picture>
+                    <source srcset="images/gear/4.webp" type="image/webp"><img class="of-contain" src="images/gear/4.png" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="catalog-item-title fs-sm-16 fs-14 fw-sb fw-sb" href="product-gear.html"></a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column flex-grow-1 justify-content-end">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-center">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-white border-bottom border-2 border-light" href="product-gear.html">
+                  <picture>
+                    <source srcset="images/gear/1.webp" type="image/webp"><img class="of-contain" src="images/gear/1.png" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="catalog-item-title fs-sm-16 fs-14 fw-sb fw-sb" href="product-gear.html"></a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column flex-grow-1 justify-content-end">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-center">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-white border-bottom border-2 border-light" href="product-gear.html">
+                  <picture>
+                    <source srcset="images/gear/2.webp" type="image/webp"><img class="of-contain" src="images/gear/2.png" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="catalog-item-title fs-sm-16 fs-14 fw-sb fw-sb" href="product-gear.html"></a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column flex-grow-1 justify-content-end">
+                    <button class="btn-inline fs-16 lh-1" data-bs-toggle="modal" data-bs-target=".modal-price_request">Запросить цену</button>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-center">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-6 d-flex">
+              <div class="catalog-item product-item d-flex position-relative flex-grow-1 border border-2 border-light"><a class="product-item-img bg-white border-bottom border-2 border-light" href="product-gear.html">
+                  <picture>
+                    <source srcset="images/gear/3.webp" type="image/webp"><img class="of-contain" src="images/gear/3.png" loading="lazy">
+                  </picture></a>
+                <div class="catalog-item-block d-flex flex-grow-1">
+                  <div class="catalog-item-desc d-flex flex-column gap-15 flex-grow-1">
+                    <div class="d-flex flex-column gap-5 align-items-start">
+                      <div class="px-3 bg-light"><span class="fs-12 o-0_8 fw-lg">В наличии</span></div><a class="catalog-item-title fs-sm-16 fs-14 fw-sb fw-sb" href="product-gear.html"></a>
+                    </div>
+                    <div class="d-flex flex-column gap-5">
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                      <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item-price d-flex flex-column flex-grow-1 justify-content-end">
+                    <div class="fs-16 lh-1 fw-sb">2 500 000 <span class='fs-12'> руб. </span></div>
+                    <div class="catalog-item-buy d-flex w-100">
+                      <button class="btn btn-main fs-14 fw-sb flex-grow-1" data-bs-toggle="modal" data-bs-target=".modal-buy">Купить</button>
+                      <div class="d-flex align-items-center gap-20 justify-content-center">
+                        <button class="btn-icon d-flex align-items-center gap-5"><i class="icon fs-20 u_star"></i><span class="fs-14">В избранное</span></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog-item-options product-item-options position-absolute d-flex flex-wrap gap-5">
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Новинка</div>
+                  </div>
+                  <div class="catalog-item-option p-5 bg-white">
+                    <div class="fs-12 text-main lh-0_8">Скидка 5%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-light py-xl-80 py-md-50 py-30">
+      <div class="container">
+        <div class="d-flex flex-column gap-lg-40 gap-sm-30 gap-20">
+          <div class="footer-top">
+            <div class="row g-xl-50 g-md-30 g-15 align-items-center">
+              <div class="col-lg-auto">
+                <div class="header-logo d-flex flex-lg-row flex-column align-items-lg-end align-items-center gap-lg-30 gap-sm-20 gap-10"><img src="images/logo.svg" alt="Логотип"><span class="fs-lg-18 fs-sm-16 fs-14">башенные краны, <br class='d-none d-lg-inline'>  запчасти и сервис</span></div>
+              </div>
+              <div class="col-lg-auto d-flex justify-content-center">
+                <div class="d-flex align-items-center gap-15"><a class="d-flex header-social" href="#"><img src="images/vk.svg" alt="Вконтакте"></a><a class="d-flex header-social" href="#"><img src="images/tg.svg" alt="Telegram"></a><a class="d-flex header-social" href="#"><img src="images/wa.svg" alt="WhatsApp"></a>
+                </div>
+              </div>
+              <div class="col-lg">
+                <form class="header-search d-flex position-relative flex-grow-1 js_search" action="search.html" method="get" autocomplite="off">
+                  <input class="w-100 bg-white" type="text" name="stext" placeholder="Поиск по сайту">
+                  <div class="header-search-block d-flex align-items-center gap-15 position-absolute">
+                    <div class="d-sm-flex d-none align-items-center gap-5"><span class="fs-14 fw-lg">Например:</span><a class="fs-14 fw-lg text-decoration-underline" href="search.html">башенный кран</a></div>
+                    <button class="btn btn-inline-nb d-flex"><i class="icon u_search fs-18"></i></button>
+                  </div>
+                  <div class="header-search-result search-result position-absolute p-xl-30 p-20 bg-white flex-column w-100 overflow-auto scroll-visible">
+                    <div class="d-flex flex-column gap-10">
+                      <div class="fs-14 fw-sb">Краны</div><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a>
+                    </div>
+                    <hr class="my-15 o-0_1">
+                    <div class="d-flex flex-column gap-10">
+                      <div class="fs-14 fw-sb">Запчасти</div><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                        <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bot">
+            <div class="footer-bot-main d-flex flex-column gap-25">
+              <div class="row g-lg-20 g-sm-10 g-5 align-items-start justify-content-center justify-content-lg-between">
+                <div class="col-lg-auto d-flex justify-content-center pb-10 pb-lg-0">
+                  <ul class="list-unstyled p-0 m-0 d-flex flex-lg-column gap-8">
+                    <li><a class="fs-16" href="catalog-crane.html">Продажа</a></li>
+                    <li><a class="fs-16" href="catalog-gear.html">Запчасти</a></li>
+                    <li><a class="fs-16" href="services.html">Сервис</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-auto d-flex justify-content-center">
+                  <ul class="list-unstyled m-0 p-0 d-flex flex-column gap-8 align-items-center align-items-lg-start">
+                    <li><a class="fs-16 fw-lg" href="about.html">О компании</a></li>
+                    <li><a class="fs-16 fw-lg" href="contact.html">Контакты</a></li>
+                    <li><a class="fs-16 fw-lg" href="news.html">Новости</a></li>
+                    <li><a class="fs-16 fw-lg" href="#">Отзывы</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-auto d-flex justify-content-center">
+                  <ul class="list-unstyled m-0 p-0 d-flex flex-column gap-8 align-items-center align-items-lg-start">
+                    <li><a class="fs-16 fw-lg" href="promotions.html">Акции</a></li>
+                    <li><a class="fs-16 fw-lg" href="#">Вакансии</a></li>
+                    <li><a class="fs-16 fw-lg" href="#">Партнерам</a></li>
+                    <li><a class="fs-16 fw-lg" href="articles.html">Статьи</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-auto d-flex justify-content-center align-content-lg-start">
+                  <ul class="list-unstyled m-0 p-0 d-flex flex-column gap-8 align-items-center align-items-lg-start">
+                    <li><a class="fs-16 fw-lg" href="#">Доставка и оплата</a></li>
+                    <li><a class="fs-16 fw-lg" href="#">Сертификаты и лицензии</a></li>
+                    <li><a class="fs-16 fw-lg" href="questions">Вопрос-ответ</a></li>
+                    <li><a class="fs-16 fw-lg" href="#">Лизинг</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-auto d-flex justify-content-center pt-10 pt-lg-0">
+                  <div class="d-flex flex-column gap-20">
+                    <div class="d-flex gap-30">
+                      <div class="d-flex flex-column align-items-start"><a class="fs-20 fw-sb lh-1 text-uppercase" href="tel:+74957841888">8 (495) 784-18-88</a><span class="fs-16 fw-lg lh-1">Бесплатно по России</span></div>
+                      <div class="d-flex flex-column align-items-start"><a class="fs-20 lh-1 text-uppercase" href="tel:+88001231212">8 800 123-12-12</a><a class="fs-16 fw-lg lh-1" href="mailto:kmtrade.llc@yandex.ru">kmtrade.llc@yandex.ru</a></div>
+                    </div>
+                    <div class="d-flex flex-column gap-8 align-items-center align-items-lg-start">
+                      <div class="d-flex align-items-start gap-10">
+                        <div class="d-flex py-2"><i class="icon fs-12 o-0_3 u_map-marker"></i></div><span class="fs-16 fw-lg">г. Подольск, ул. Коммунальная, д. 13, помещ. 3</span>
+                      </div>
+                      <div class="d-flex align-items-start gap-10">
+                        <div class="d-flex py-2"><i class="icon fs-12 o-0_3 u_clock-eight"></i></div><span class="fs-16 fw-lg">Пн - Пт с 9:00 до 18:00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="fs-14 lh-n o-0_8 text-center text-lg-start">Посещая сайт компании «КМ ТРЕЙД», вы соглашаетесь с Правилами и условиями использования и политикой обработки персональных данных данного сайта.</p>
+            </div>
+            <div class="footer-bot-form d-flex flex-column gap-15">
+              <div class="fs-16 fw-sb mx-auto mx-lg-start">Бесплатная консультация</div>
+              <form class="d-flex flex-column gap-15" name="footer-form" autocomplete="off">
+                <label class="main-input">
+                  <input class="px-20 py-15 fs-16" type="tel" placeholder="+7 (9__) ___-__-__" required>
+                </label>
+                <button class="btn btn-main px-20 py-15 fs-16 fw-sb">Получить консультацию</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="position-absolute top-0 end-0 pe-10 pe-sm-0 d-none d-lg-block">
+          <div class="scroll-item d-flex flex-column gap-20 position-fixed">
+            <div class="rounded-circle p-xl-15 p-10 d-flex scroll-top pointer border border-2 border-white bg-light"><i class="icon u_arrow-up fs-xl-30 fs-20"></i></div>
+            <button class="rounded-circle p-xl-15 p-10 d-flex scroll-call pointer border border-2 border-main bg-main"><i class="icon u_phone-alt fs-xl-30 fs-20 text-white"></i></button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-sticky-search js_mobile-search d-md-none bg-light py-15">
+      <div class="container">
+        <form class="header-search d-flex position-relative flex-grow-1 js_search" action="search.html" method="get" autocomplite="off">
+          <input class="w-100 bg-white" type="text" name="stext" placeholder="Поиск по сайту">
+          <div class="header-search-block d-flex align-items-center gap-15 position-absolute">
+            <button class="btn btn-inline-nb d-flex"><i class="icon u_search fs-18"></i></button>
+          </div>
+          <div class="header-search-result search-result position-absolute p-xl-30 p-20 bg-white flex-column w-100 overflow-auto scroll-visible">
+            <div class="d-flex flex-column gap-10">
+              <div class="fs-14 fw-sb">Краны</div><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a>
+            </div>
+            <hr class="my-15 o-0_1">
+            <div class="d-flex flex-column gap-10">
+              <div class="fs-14 fw-sb">Запчасти</div><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a><a href="product.html">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1 header-search-result-char"><span><span>Башенный кран COMANSA 21CM335</span></span><span><span>2 500 000 руб.</span></span></div></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-sticky d-md-none bg-light">   
+      <div class="container">           
+        <div class="d-flex align-items-center justify-content-around">           <a class="btn-add d-flex flex-column align-items-center gap-md-8 gap-5 p-10" href="#mobile-menu"><i class="icon fs-25 u_bars">                           </i><span class="fs-12 fw-sb">Меню</span></a>
+          <button class="btn-add d-flex flex-column align-items-center gap-md-8 gap-5 p-10 js_mobile-search-btn"><i class="icon fs-25 u_search">                           </i><span class="fs-12 fw-sb">Поиск</span></button>
+          <button class="btn-add d-flex flex-column align-items-center gap-md-8 gap-5 p-10" data-bs-toggle="modal" data-bs-target=".modal-call"><i class="icon fs-25 u_phone-alt">                           </i><span class="fs-12 fw-sb">Звонок</span></button>
+        </div>
+      </div>
+    </div>
+    <nav class="mobile-menu menu-scrolling" id="mobile-menu" style="display: none">
+      <ul>
+        <li><a href="catalog-crane.html" title="Продажа">Продажа</a></li>
+        <li><a href="catalog-gear.html" title="Запчасти">Запчасти</a></li>
+        <li><a href="services.html" title="Сервис">Сервис</a></li>
+        <li class="mobile-menu-feedback">
+          <div class="mobile-menu-feedback-item d-flex flex-column gap-5"><a class="fs-14 fw-lg" href="#.html" title="Вакансии">Вакансии</a><a class="fs-14 fw-lg" href="#.html" title="Партнерам">Партнерам</a><a class="fs-14 fw-lg" href="articles.html" title="Статьи">Статьи</a><a class="fs-14 fw-lg" href=".html" title="Доставка и оплата">Доставка и оплата</a><a class="fs-14 fw-lg" href="certificates.html" title="Сертификаты и лицензии">Сертификаты и лицензии</a><a class="fs-14 fw-lg" href="questions.html" title="Вопрос-ответ">Вопрос-ответ</a><a class="fs-14 fw-lg" href="#.html" title="Лизинг">Лизинг</a>
+          </div>
+          <div class="mobile-menu-feedback-item d-flex flex-column align-items-start gap-5">
+            <div class="d-flex align-items-start gap-10">
+              <div class="d-flex py-2"><i class="icon fs-12 o-0_3 u_map-marker"></i></div><span class="fs-14 fw-lg">г. Подольск, ул. Коммунальная, <br> д. 13 , помещ. 3</span>
+            </div>
+            <div class="d-flex align-items-start gap-10">
+              <div class="d-flex py-2"><i class="icon fs-12 o-0_3 u_clock-eight"></i></div><span class="fs-14 fw-lg">Пн - Пт с 9:00 до 18:00</span>
+            </div>
+          </div>
+          <div class="mobile-menu-feedback-item d-flex flex-column align-items-start gap-15">
+            <div class="d-flex flex-column"><a class="fs-18 lh-1 w-auto" href="tel:88001231212">8 800 123-12-12</a>
+              <div class="fs-14 fw-lg lh-1">Бесплатно по России                       </div>
+            </div>
+            <div class="d-flex flex-column"><a class="fs-18 lh-1 w-auto" href="tel:+74957841888">8 (495) 784-18-88</a><a class="fs-14 fw-lg lh-1 w-auto" href="mailto:kmtrade.llc@yandex.ru">kmtrade.llc@yandex.ru</a></div>
+            <button class="btn btn-main d-flex align-items-center p-10 gap-5" data-bs-toggle="modal" data-bs-target=".modal-call"><i class="icon u_phone-volume fs-14"></i><span class="lh-0_9 fs-14">Заказать звонок</span></button>
+            <div class="d-flex align-items-center gap-15"><a class="d-flex header-social w-auto" href="#"><img src="images/vk.svg" alt="Вконтакте"></a><a class="d-flex header-social w-auto" href="#"><img src="images/tg.svg" alt="Telegram"></a><a class="d-flex header-social w-auto" href="#"><img src="images/wa.svg" alt="WhatsApp"></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="modal fade modal-call" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">               
+            <button class="btn-close position-absolute end-0 top-0 border-0 m-0 d-flex p-10" data-bs-dismiss="modal"><i class="icon close fs-18"></i></button>
+          </div>
+          <div class="modal-body">               
+            <h3 class="fs-18 fw-sb lh-1 mb-0">Заказать звонок                </h3>
+            <p>Качественно сделали нам остекление на балконе, смотрится красиво, проверяли нигде воздух не просачивается лишнего, не дует.</p>
+            <ul class="d-flex flex-column gap-5 list-unstyled p-0 m-0">
+              <li class="d-flex align-items-start gap-5"><i class="icon u_check fs-16 text-main"></i><span>Поможем в чем-то</span></li>
+              <li class="d-flex align-items-start gap-5"><i class="icon u_check fs-16 text-main"></i><span>Проконсультируем по вопросам</span></li>
+              <li class="d-flex align-items-start gap-5"><i class="icon u_check fs-16 text-main"></i><span>Предложим подарок и дополнительную скидку</span></li>
+            </ul>
+            <form class="d-flex flex-column gap-10" name="modal-call" autocomplete="off">
+              <label class="main-input">
+                <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
+              </label>
+              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Начать сотрудничество</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-service" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">               
+            <button class="btn-close position-absolute end-0 top-0 border-0 m-0 d-flex p-10" data-bs-dismiss="modal"><i class="icon close fs-18"></i></button>
+          </div>
+          <div class="modal-body">               
+            <h3 class="fs-18 fw-sb lh-1 mb-0">Заказать услугу</h3>
+            <ul class="d-flex flex-column gap-5 list-unstyled p-0 m-0">
+              <li class="d-flex align-items-start gap-5"><i class="icon u_check fs-16 text-main"></i><span>Поможем в чем-то</span></li>
+              <li class="d-flex align-items-start gap-5"><i class="icon u_check fs-16 text-main"></i><span>Проконсультируем по вопросам</span></li>
+              <li class="d-flex align-items-start gap-5"><i class="icon u_check fs-16 text-main"></i><span>Предложим подарок и дополнительную скидку</span></li>
+            </ul>
+            <form class="d-flex flex-column gap-10" name="modal-service" autocomplete="off">
+              <label class="main-input">
+                <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
+              </label>
+              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Начать сотрудничество</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-content_block" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">               
+            <button class="btn-close position-absolute end-0 top-0 border-0 m-0 d-flex p-10" data-bs-dismiss="modal"><i class="icon close fs-18"></i></button>
+          </div>
+          <div class="modal-body">               
+            <h3 class="fs-18 fw-sb lh-1 mb-0">Контент</h3>
+            <div class="content">
+              <p>Качественно сделали нам остекление на балконе, смотрится красиво, проверяли нигде воздух не просачивается лишнего, не дует. Понравился сервис в целом, с самого начала было легко общаться, и помогали во всем. Замеры, изготовка, сам уже потом монтаж, проблем нигде не произошло, что радует. По условиям адекватно, мы сравнивали специально и другие компании.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-buy" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">               
+            <button class="btn-close position-absolute end-0 top-0 border-0 m-0 d-flex p-10" data-bs-dismiss="modal"><i class="icon close fs-18"></i></button>
+          </div>
+          <div class="modal-body">               
+            <h3 class="fs-18 fw-sb lh-1 mb-0">Купить башенный кран QTZ 63</h3>
+            <div class="modal-img">
+              <picture>
+                <source srcset="images/modal/modal-img.webp" type="image/webp"><img src="images/modal/modal-img.jpg" loading="lazy">
+              </picture>
+            </div>
+            <div class="modal-buy-item d-flex flex-column gap-10">
+              <div class="fs-18 fw-sb">2 500 000 <span class='fs-14'>руб.</span></div>
+              <div class="d-flex gap-20"><a class="btn btn-inline fs-14" href="#">Доставка и оплата</a><a class="btn btn-inline fs-14" href="#">Гарантии</a></div>
+              <p>Строительный Кран башенный КБ-474А с верхним поворотом – г/п 8 тонн. Вылет стрелы д 55 м, высота подъема до 234 метра. Предназначен для механизации подъемно-транспортных работ при строительстве.</p>
+              <div class="modal-char d-flex flex-column gap-8">
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+              </div>
+            </div>
+            <form class="d-flex flex-column gap-10" name="modal-buy" autocomplete="off">
+              <label class="main-input">
+                <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
+              </label>
+              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Купить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-price_request" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">               
+            <button class="btn-close position-absolute end-0 top-0 border-0 m-0 d-flex p-10" data-bs-dismiss="modal"><i class="icon close fs-18"></i></button>
+          </div>
+          <div class="modal-body">               
+            <h3 class="fs-18 fw-sb lh-1 mb-0">Купить башенный кран QTZ 63</h3>
+            <div class="modal-img">
+              <picture>
+                <source srcset="images/modal/modal-img.webp" type="image/webp"><img src="images/modal/modal-img.jpg" loading="lazy">
+              </picture>
+            </div>
+            <div class="modal-buy-item d-flex flex-column gap-10">                   
+              <div class="fs-18 fw-sb">Цена по запросу</div>
+              <div class="d-flex gap-20"><a class="btn btn-inline fs-14" href="#">Доставка и оплата</a><a class="btn btn-inline fs-14" href="#">Гарантии</a></div>
+              <p>Строительный Кран башенный КБ-474А с верхним поворотом – г/п 8 тонн. Вылет стрелы д 55 м, высота подъема до 234 метра. Предназначен для механизации подъемно-транспортных работ при строительстве.</p>
+              <div class="modal-char d-flex flex-column gap-8">                       
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+              </div>
+            </div>
+            <form class="d-flex flex-column gap-10" name="modal-price_request" autocomplete="off">
+              <label class="main-input">
+                <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
+              </label>
+              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Купить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-service_order" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">   
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">               
+            <button class="btn-close position-absolute end-0 top-0 border-0 m-0 d-flex p-10" data-bs-dismiss="modal"><i class="icon close fs-18"></i></button>
+          </div>
+          <div class="modal-body">               
+            <h3 class="fs-18 fw-sb lh-1 mb-0">Запрос цены на строительный Кран башенный КБ-474А</h3>
+            <div class="modal-img">
+              <picture>
+                <source srcset="images/modal/modal-img.webp" type="image/webp"><img src="images/modal/modal-img.jpg" loading="lazy">
+              </picture>
+            </div>
+            <div class="modal-buy-item d-flex flex-column gap-10">                   
+              <div class="fs-18 fw-sb">2 500 000 <span class='fs-14'>руб.</span></div>
+              <p>Строительный Кран башенный КБ-474А с верхним поворотом – г/п 8 тонн. Вылет стрелы д 55 м, высота подъема до 234 метра. Предназначен для механизации подъемно-транспортных работ при строительстве.</p>
+              <div class="modal-char d-flex flex-column gap-8">                       
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Грузоподьёмность</span></span><span><span>до 18 тонн</span></span></div>
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Длина стрелы</span></span><span><span>до 76 м</span></span></div>
+                <div class="characteristic-line justify-content-between position-relative flex-grow-1"><span><span>Стоимость аренды</span></span><span><span>договорная цена</span></span></div>
+              </div>
+            </div>
+            <form class="d-flex flex-column gap-10" name="modal-service_order" autocomplete="off">
+              <label class="main-input">
+                <input class="px-20 py-15 bg-light" type="tel" placeholder="+7 (9__) ___-__-__" required>
+              </label>
+              <button class="btn btn-main px-20 py-15 fs-14 fw-sb">Заказать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-success" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">           
+          <div class="modal-body">
+            <h3 class="fs-18 fw-sb lh-1 mb-0 text-center">Заявка принята</h3>
+            <p class="text-center">Мы свяжемся с вами в ближайшее рабочее время</p>
+            <button class="btn btn-main px-20 py-15 fs-14 fw-sb" data-bs-dismiss="modal">Хорошо</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="themes/engine/js/slider.bundle.js"></script>
+    <script src="themes/engine/js/main.bundle.js"></script>
+    <script src="themes/engine/js/gallery.bundle.js"></script>
+  </body>
+</html>
