@@ -140,7 +140,18 @@ document.addEventListener('DOMContentLoaded', function () {
             })            
         })
     }
-    
+    document.querySelectorAll('.catalog-spoiler').forEach(catalogTags => {
+        const block = catalogTags.querySelector('.catalog-tags');        
+        if(block){            
+            if(block.clientHeight <= 63){
+                catalogTags.querySelector('.spoiler-btn').style.display = 'none';
+            } else {
+                catalogTags.querySelector('.spoiler-btn').style.display = 'flex';
+            }
+
+            
+        }
+    })
     //tabs
     function tabs(tabName){        
         if(document.querySelector(tabName)){            
